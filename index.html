@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashQuiz - Interactive Learning</title>
+    <link rel="stylesheet" href="quiz-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-brain"></i> FlashQuiz</h1>
+            <p>Test your knowledge with our quiz from GK Buddy.</p>
+        </header>
+
+        <div id="quiz-container">
+            <div id="quiz-start-screen" class="active">
+                <h2>Ready to Challenge Yourself?</h2>
+                <p>This quiz contains 10 questions to improve your knowledge.</p>
+                <button id="start-quiz-btn" class="btn">Start Quiz</button>
+                <div class="categories">
+                    <h3>Choose a Category:</h3>
+                    <div class="category-buttons">
+                        <button class="category-btn" data-category="indian_history">Indian History</button>
+                        <button class="category-btn" data-category="mythology">Mythology</button>
+                        <button class="category-btn" data-category="first_in_india">First in India</button>
+                        <button class="category-btn" data-category="Current_affairs">Current Affairs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quiz-questions" class="hidden">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress"></div>
+                    </div>
+                    <div class="question-counter">
+                        Question <span id="current-question">1</span>/10
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2 id="question-text">Question goes here?</h2>
+                            <div id="options-container" class="options-container">
+                                <!-- Options will be inserted here -->
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Answer Explanation</h3>
+                            <p id="explanation-text"></p>
+                            <button id="next-btn" class="btn">Next Question</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quiz-results" class="hidden">
+                <div id="confetti-container"></div>
+                <div class="results-content">
+                    <h2>Quiz Completed!</h2>
+                    <div class="score-container">
+                        <div class="score-circle">
+                            <span id="score-percent">0%</span>
+                        </div>
+                        <p>You scored <span id="score-text">0</span> out of 10</p>
+                    </div>
+                    <div class="result-message" id="result-message"></div>
+                    <div class="action-buttons">
+                        <button id="review-answers-btn" class="btn">Review Answers</button>
+                        <button id="retry-quiz-btn" class="btn">Try Again</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="review-container" class="hidden">
+                <h2>Review Your Answers</h2>
+                <div id="review-list">
+                    <!-- Review items will be added here -->
+                </div>
+                <button id="back-to-results-btn" class="btn">Back to Results</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
