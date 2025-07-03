@@ -26,7 +26,7 @@ FlashQuiz is a lightweight web-based quiz application built with **HTML, CSS, an
 
 ##  Live Site
 
-👉 [Click here to open the Quiz App](https://bhargavmupparisetty.github.io/quiz_app)
+[Click here to open the Quiz App](https://bhargavmupparisetty.github.io/quiz_app)
 
 
 
