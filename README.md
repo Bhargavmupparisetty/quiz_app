@@ -28,5 +28,10 @@ FlashQuiz is a lightweight web-based quiz application built with **HTML, CSS, an
 
 [Click here to open the Quiz App](https://bhargavmupparisetty.github.io/quiz_app)
 
+## Remarks
+
+This app was created using **Claude 4** for experimental purposes.  
+It is part of an effort to explore and compare the capabilities of Claude 4 with other models such as **GPT-4** and **Grok 3**.
+
 
 
